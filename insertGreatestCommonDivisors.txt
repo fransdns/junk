@@ -1,0 +1,21 @@
+(EC2)-2. Dado el encabezado de una de lista vinculada, en el que cada nodo contiene un valor entero.
+Entre cada par de nodos adyacentes, inserte un nuevo nodo con un valor igual al máximo común divisor
+de ellos. Devuelve la lista vinculada después de la inserción.
+El máximo común divisor de dos números es el mayor entero positivo que divide a ambos números.
+
+Ejemplo 1:
+Input: head = [18,6,10,3]
+Output: [18,6,6,2,10,1,3]
+El primer diagrama denota la lista enlazada inicial y el segundo diagrama denota la lista enlazada
+después de insertar los nuevos nodos (los nodos en azul son los nodos insertados).
+• Insertamos el máximo común divisor de 18 y 6 = 6 entre el primero y el segundo nodo.
+• Insertamos el máximo común divisor de 6 y 10 = 2 entre el segundo y el tercero nodo.
+• Insertamos el máximo común divisor de 10 y 3 = 1 entre el tercero y el cuarto nodo. No hay
+más nodos adyacentes, por lo que devolvemos la lista vinculada.
+
+Ejemplo 2:
+Input: head = [7]
+Output: [7]
+El primer diagrama denota la lista enlazada inicial y el segundo diagrama denota la lista enlazada
+después de insertar los nuevos nodos. No hay pares de nodos adyacentes, por lo que devolvemos
+la lista enlazada inicial.
